@@ -1,0 +1,1 @@
+Install library Adafruit_MPR121 in C:\Users\BTV\Documents\Arduino\libraries and overwrite with this files
