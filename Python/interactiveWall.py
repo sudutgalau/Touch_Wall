@@ -15,7 +15,9 @@ args = parser.parse_args()
 
 client = udp_client.SimpleUDPClient(args.ip, args.port)
 
-ser = serial.Serial('COM3', 9600, timeout=0)
+ser = serial.Serial('COM3', 9600, timeout=0) # Comment if S.O is Windows
+#ser = serial.Serial('/dev/ttyACM0', 9600, timeout=0.1) # Uncomment if S.O. is RASPBERRY PI
+
 
 def play(layer,clip):
     layer = str(layer)
